@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGLÊS</title>
+    <link rel="stylesheet" href="../css/styleVA.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="course-header">
+                <a href="../html/index.html">⟵ Vai para o Inicio</a>
+                <h1>Curso de INGLÊS para iniciantes</h1>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 99%;"></div>
+                </div>
+                <!--<p>99% concluído</p>
+                <button class="certificate-btn">EMITA O SEU CERTIFICADO</button>-->
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Busca por título da lição">
+            </div>
+            <nav class="lesson-list">
+                <ul>
+                    <li>
+                        <a class="topico" href="#" onclick="toggleContent('topic1')">Tópico 1</a>
+                        <div id="topic1" class="content">
+                            <p class="checked">Conteúdo 5.1</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.3</p>
+                            <p class="checked">Conteúdo 5.4</p>
+                            <p class="checked">Conteúdo 5.5</p>
+                            <p class="checked">Conteúdo 5.6</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="topico" href="#" onclick="toggleContent('topic2')">Tópico 2</a>
+                        <div id="topic2" class="content">
+                            <p class="checked">Conteúdo 5.1</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.3</p>
+                            <p class="checked">Conteúdo 5.4</p>
+                            <p class="checked">Conteúdo 5.5</p>
+                            <p class="checked">Conteúdo 5.6</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="topico" href="#" onclick="toggleContent('topic3')">Tópico 3</a>
+                        <div id="topic3" class="content">
+                            <p class="checked">Conteúdo 5.1</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.3</p>
+                            <p class="checked">Conteúdo 5.4</p>
+                            <p class="checked">Conteúdo 5.5</p>
+                            <p class="checked">Conteúdo 5.6</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="topico" href="#" onclick="toggleContent('topic4')">Tópico 4</a>
+                        <div id="topic4" class="content">
+                            <p class="checked">Conteúdo 5.1</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.3</p>
+                            <p class="checked">Conteúdo 5.4</p>
+                            <p class="checked">Conteúdo 5.5</p>
+                            <p class="checked">Conteúdo 5.6</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="topico" href="#" onclick="toggleContent('topic5')">Tópico 5</a>
+                        <div id="topic5" class="content">
+                            <p class="checked">Conteúdo 5.1</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.2</p>
+                            <p class="checked">Conteúdo 5.3</p>
+                            <p class="checked">Conteúdo 5.4</p>
+                            <p class="checked">Conteúdo 5.5</p>
+                            <p class="checked">Conteúdo 5.6</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h2>Inglês</h2>
+            <div class="video-player">
+                <video controls>
+                    <source src="../videos/ABCmusifique.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="video-controls">
+                <button>MARQUE COMO NÃO VISTO</button>
+                <button class="continue-btn">CONTINUE ⟶</button>
+            </div>
+    </div>
+    <script>
+        function toggleContent(topicId) {
+            var content = document.getElementById(topicId);
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+
+        // Initialize by hiding all content
+        window.onload = () => {
+            var contents = document.querySelectorAll('.sidebar .content');
+            contents.forEach(content => content.style.display = 'none');
+        }
+    </script>
+</body>
+
+</html>
